@@ -35,6 +35,7 @@ formElem.addEventListener('submit', e => {
 });
 
 showMoreBtn.addEventListener('click', () => {
+  hideLoadMoreButton();
   showLoader();
   getImagesByQuery(searchQuery, page)
     .then(images => {
@@ -47,6 +48,7 @@ showMoreBtn.addEventListener('click', () => {
         return;
       }
       createGallery(images.hits);
+      showLoadMoreButton();
       page++;
       const card = document.querySelector('.gallery .image-item');
       if (card) {

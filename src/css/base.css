@@ -59,6 +59,7 @@ main:has(.back-link) {
 
 .loader {
   display: none;
+  margin-top: 15px;
 }
 .loader.is-visible {
   display: flex;
