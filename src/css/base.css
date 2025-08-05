@@ -174,3 +174,53 @@ main:has(.back-link) {
   object-fit: cover;
   object-position: center;
 }
+
+.scroll-to-top {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  padding: 10px 15px;
+  font-size: 20px;
+  border: 1px solid white;
+  border-radius: 50%;
+  background-color: #333;
+  color: white;
+  cursor: pointer;
+  display: none;
+  z-index: 1000;
+  opacity: 0.7;
+  transition: opacity 0.3s ease;
+}
+
+.scroll-to-top:hover {
+  opacity: 1;
+}
+
+.show-more-btn {
+  margin: 0 auto;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  padding: 8px 16px;
+  width: 120px;
+  height: 40px;
+  background: #4e75ff;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  border: none;
+  cursor: pointer;
+  transition: all 250ms ease-in-out;
+  margin-top: 24px;
+}
+
+.show-more-btn:hover {
+  background: #6c8cff;
+}
+
+.js-show-more {
+  display: flex;
+}
